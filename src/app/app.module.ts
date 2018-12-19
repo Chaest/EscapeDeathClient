@@ -3,23 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RoomListComponent } from './components/room-list/room-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RoomService } from './services/room.service';
-import { RoomComponent } from './components/room/room.component';
+import { PlayerService } from './services/player.service';
+//import { RoomComponent } from './components/room/room.component';
+import { GameComponent } from './components/game/game.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RoomListComponent,
-    RoomComponent
+    GameComponent,
+//    RoomComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [RoomService],
+  providers: [RoomService, PlayerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

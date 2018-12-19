@@ -1,0 +1,20 @@
+<section class="hero is-fullheight has-background-black">
+	<div class="hero-body">
+		<div class="container">
+			<div class="buttons">
+				<ng-container *ngFor="let player of players">
+					<a class="button is-{{getColorFromPlayer(player)}} is-fullwidth">{{player.name}}</a><br>
+				</ng-container>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="hero is-fullheight has-background-black">
+	<div class="hero-body">
+		<div class="container">
+			<ng-container *ngFor="let room of rooms">
+				<a class="button is-grey is-normal is-fullwidth">{{room.name}}</a>
+			</ng-container>
+		</div>
+	</div>
+</section>
