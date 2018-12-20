@@ -1,15 +1,24 @@
 <section class="hero is-fullheight has-background-black">
 	<div class="hero-body">
 		<div class="container">
-			<div class="buttons">
-				<ng-container *ngFor="let player of players">
-					<a class="button is-{{getColorFromPlayer(player)}} is-fullwidth">{{player.name}}</a><br>
-				</ng-container>
-			</div>
+			<nav class="level">
+				<div class="level-item has-text-centered">
+					<figure class="image is-128x128">
+						<img src="assets/images/logo_emptied.png">
+					</figure>
+				</div>
+				<div class="level-item has-text-centered">
+					<div class="buttons">
+						<ng-container *ngFor="let player of players">
+							<a class="button is-{{getColorFromPlayer(player)}} is-fullwidth">{{player.name}}</a>
+						</ng-container>
+					</div>
+				</div>
+			</nav>
 		</div>
 	</div>
 </section>
-<section class="hero is-fullheight has-background-black">
+<!--<section class="hero is-fullheight has-background-black">
 	<div class="hero-body">
 		<div class="container">
 			<ng-container *ngFor="let room of rooms">
@@ -17,4 +26,4 @@
 			</ng-container>
 		</div>
 	</div>
-</section>
+</section>-->
